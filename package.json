@@ -20,12 +20,7 @@
     "lint": "eslint src --fix --ext .js,.ts,.jsx,.tsx,.vue && prettier --write --ignore-unknown",
     "commit": "cz"
   },
-  "lint-staged": {
-    "*.{vue,js,ts,tsx,jsx}": [
-      "eslint --fix",
-      "prettier --write --ignore-unknown"
-    ]
-  },
+  "lint-staged": {},
   "dependencies": {
     "animate.css": "^4.1.1",
     "axios": "^1.3.4",
@@ -69,11 +64,7 @@
     "vite-plugin-mock": "^2.9.6",
     "vue-tsc": "^0.29.8"
   },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  },
+  "config": {},
   "engines": {
     "node": ">= 16.9.0"
   },

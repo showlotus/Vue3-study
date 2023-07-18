@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { useUserStore } from '/@/store'
-import YwzTable from '/@/components/ywz-table'
-import { ITableCol } from '/@/components/ywz-table/types'
+import { useUserStore } from '@/store'
+import YwzTable from '@/components/ywz-table'
+import { ITableCol } from '@/components/ywz-table/types'
 const store = useUserStore()
 const roleList = computed(() => store.roleList)
 const columns: ITableCol[] = [

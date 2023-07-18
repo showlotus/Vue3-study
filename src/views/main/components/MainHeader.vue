@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { useUserStore } from '/@/store'
+import { useUserStore } from '@/store'
 const activeIndex = computed(() => {
   return useRoute().path
 })
@@ -22,13 +22,16 @@ const menuList = computed(() => {
 
       <!-- 存在子路由的情况 -->
       <el-sub-menu v-else :index="'/main' + menu.path">
-        <template #title>{{ menu.name }}</template>
+        <template #title>
+          {{ menu.name }}
+        </template>
         <el-menu-item
           v-for="_menu in menu.children"
           :key="_menu.id"
           :index="'/main' + _menu.path"
-          >{{ _menu.name }}</el-menu-item
         >
+          {{ _menu.name }}
+        </el-menu-item>
       </el-sub-menu>
     </template>
   </el-menu>

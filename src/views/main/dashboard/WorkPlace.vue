@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useUserStore } from '/@/store'
+import { useUserStore } from '@/store'
 const store = useUserStore()
 const curUser = computed(() => store.userDetail)
 const userList = computed(() => store.userList)
@@ -13,12 +13,9 @@ const handleChange = () => {
   <div class="flex items-center">
     <span class="mr-2">切换用户</span>
     <el-radio-group v-model="radio" size="small" @change="handleChange">
-      <el-radio-button
-        v-for="user in userList"
-        :key="user.id"
-        :label="user.id"
-        >{{ user.name }}</el-radio-button
-      >
+      <el-radio-button v-for="user in userList" :key="user.id" :label="user.id">
+        {{ user.name }}
+      </el-radio-button>
     </el-radio-group>
   </div>
   <div class="mt-4">

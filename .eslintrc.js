@@ -24,8 +24,8 @@ module.exports = defineConfig({
     'plugin:vue/vue3-recommended',
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended', // typescript-eslint推荐规则,
-    'prettier',
-    'plugin:prettier/recommended',
+    // 'prettier',
+    // 'plugin:prettier/recommended',
     './.eslintrc-auto-import.json',
   ],
   // https://cn.eslint.org/docs/rules/

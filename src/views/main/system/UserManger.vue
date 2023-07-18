@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { useUserStore } from '/@/store'
-import YwzTable from '/@/components/ywz-table'
-import { ITableCol } from '/@/components/ywz-table/types'
+import { useUserStore } from '@/store'
+import YwzTable from '@/components/ywz-table'
+import { ITableCol } from '@/components/ywz-table/types'
 const store = useUserStore()
 const userList = computed(() => store.userList)
 const columns: ITableCol[] = [
@@ -24,8 +24,9 @@ const columns: ITableCol[] = [
         "
         size="small"
         effect="light"
-        >{{ scoped.row.role.name }}</el-tag
       >
+        {{ scoped.row.role.name }}
+      </el-tag>
     </template>
   </YwzTable>
 </template>

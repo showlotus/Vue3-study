@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import JDay from '/@/components/three-line-pic/src/DMonth.vue'
-// import { YwzChart, dayConfig, monthConfig } from '/@/components/three-line-pic'
+import JDay from '@/components/three-line-pic/src/DMonth.vue'
+// import { YwzChart, dayConfig, monthConfig } from '@/components/three-line-pic'
 // const options = dayConfig()
 // const options = monthConfig()
 const show = ref(true)
